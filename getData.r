@@ -27,3 +27,30 @@ smallCities$metro_pop <- sapply(strsplit( smallCities$metro_pop, "\\♠"), "[", 
 smallCities$city <- sapply(strsplit( smallCities$city, "\\["), "[", 1)
 
 # oops, the city names don't match the metro names. Gotta pair them. 
+
+grepl("New York", "Los Angeles-Long Beach-Riverside, CA CSA")
+
+justCities <- sapply(strsplit( smallCities$city, "\\,"), "[", 1)
+
+#there are going to be multiple cities for some metro areas. Only take the biggest city.
+metros = vector(,length(justCities)) #Initialize the vector
+metros_pops = vector(,length(justCities))
+
+for(i in 1:length(justCities)){
+  city = justCities[i]
+  
+  metros[i] = NA
+  metros_pops[i] = NA
+  for(j in 1:length(smallCities$metro)){
+    metro = smallCities$metro[j]
+    
+    #If the city name is in the metro name, we good.
+    if(grepl(city, metro)){
+      metros[i] = metro
+      metros_pops[i] = smallCities$metro_pop[j]
+    } 
+  }
+}
+
+matched = data.frame(city = smallCities$city, city_pop = smallCities$city_pop, metro = metros, metro_pop = metros_pops )
+

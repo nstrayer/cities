@@ -28,11 +28,56 @@ d3.csv("data/city_metro_pops.csv", function(data){
     //setup scales.
     var city_scale = d3.scale.linear()
         .domain(city_limits)
-        .range([padding, width - padding])
+        .range([padding*3, width - padding])
 
     var metro_scale = d3.scale.linear()
         .domain(metro_limits)
         .range([height-padding, padding])
+
+    //draw axes
+    var xAxis = d3.svg.axis().scale(city_scale).orient("bottom");
+
+    var yAxis = d3.svg.axis().scale(metro_scale).orient("left");
+
+    function customYAxis(g) {
+        g.selectAll("line")
+            .style("fill", "none")
+            .style("stroke", "#000")
+            .style("shape-rendering", "crispEdges")
+            .attr("x", 50)
+            .attr("dy", -2);
+
+        g.selectAll("text")
+            .attr("x", -8)
+            .attr("dy", -2);
+        g
+            .attr("transform", "translate(" + 65 + ",0)")
+    }
+
+    function customXAxis(g) {
+        g.selectAll("line")
+            .style("fill", "none")
+            .style("stroke", "#000")
+            .style("shape-rendering", "crispEdges")
+            // .attr("x", 50)
+            // .attr("dy", -2);
+
+        g.selectAll("text")
+            // .attr("x", -8)
+            // .attr("dy", -2);
+        g
+            .attr("transform", "translate(" + 0 + ","+ (height - 20) +")")
+    }
+
+    var gy = svg.append("g")
+        .attr("class", "axis")
+        .call(yAxis)
+        .call(customYAxis)
+
+    var gx = svg.append("g")
+        .attr("class", "axis")
+        .call(xAxis)
+        .call(customXAxis)
 
     //draw the cities
     var dots = svg.selectAll(".cities")

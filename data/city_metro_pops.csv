@@ -1,0 +1,74 @@
+"","city","city_pop","metro","metro_pop"
+"1","New York, New York",8244910,"New York-Newark-Bridgeport, NY-NJ-CT-PA CSA",22214083
+"2","Los Angeles, California",3819702,"Los Angeles-Long Beach-Riverside, CA CSA",18081569
+"3","Chicago, Illinois",2707120,"Chicago-Naperville-Michigan City, IL-IN-WI CSA",9729825
+"4","Houston, Texas",2145146,"Houston-Baytown-Huntsville, TX CSA",6191434
+"5","Philadelphia, Pennsylvania",1536471,"Philadelphia-Camden-Vineland, PA-NJ-DE-MD CSA",6562287
+"6","Phoenix, Arizona",1469471,"Phoenix-Mesa-Glendale, AZ MSA",4263236
+"7","San Antonio, Texas",1359758,"San Antonio-New Braunfels, TX MSA",2194927
+"8","San Diego, California",1326179,"San Diego-Carlsbad-San Marcos, CA MSA",3140069
+"9","Dallas, Texas",1223229,"Dallas-Fort Worth, TX CSA",6887383
+"10","San Jose, California",967487,"San Jose-San Francisco-Oakland, CA CSA",7563460
+"11","Jacksonville, Florida",827908,"Jacksonville, FL MSA",1360251
+"12","Indianapolis, Indiana",827609,"Indianapolis-Anderson-Columbus, IN CSA",2103574
+"13","Austin, Texas",820611,"Austin-Round Rock-Marble Falls, TX CSA",1826636
+"14","San Francisco, California",812826,"San Jose-San Francisco-Oakland, CA CSA",7563460
+"15","Columbus, Ohio",797434,"Columbus-Marion-Chillicothe, OH CSA",2093185
+"16","Fort Worth, Texas",758738,"Dallas-Fort Worth, TX CSA",6887383
+"17","Charlotte, North Carolina",751087,"Charlotte-Gastonia-Salisbury, NC-SC CSA",2442564
+"18","Detroit, Michigan",706585,"Detroit-Warren-Flint, MI CSA",5207434
+"19","El Paso, Texas",665568,"El Paso, TX MSA",820790
+"20","Memphis, Tennessee",652050,"Memphis, TN-MS-AR MSA",1325605
+"21","Boston, Massachusetts",625087,"Boston-Worcester-Manchester, MA-RI-NH CSA",7601061
+"22","Seattle, Washington",620778,"Seattle-Tacoma-Olympia, WA CSA",4269349
+"23","Denver, Colorado",619968,"Denver-Aurora-Boulder, CO CSA",3157520
+"24","Baltimore, Maryland",619493,"Washington-Baltimore-Northern Virginia, DC-MD-VA-WV CSA",8718083
+"25","Washington, District of Columbia",617996,"Washington-Baltimore-Northern Virginia, DC-MD-VA-WV CSA",8718083
+"26","Nashville, Tennessee",609644,"Nashville-Davidson–Murfreesboro–Columbia, TN CSA",1698651
+"27","Louisville, Kentucky",602011,"Louisville/Jefferson County–Elizabethtown–Scottsburg, KY-IN CSA",1440607
+"28","Milwaukee, Wisconsin",597867,"Milwaukee-Racine-Waukesha, WI CSA",1757604
+"29","Portland, Oregon",593820,"Portland-Lewiston-South Portland, ME CSA",623205
+"30","Oklahoma City, Oklahoma",591967,"Oklahoma City-Shawnee, OK CSA",1348333
+"31","Las Vegas, Nevada",589317,"Las Vegas-Paradise-Pahrump, NV CSA",2013326
+"32","Albuquerque, New Mexico",552804,"Albuquerque, NM MSA",898642
+"33","Tucson, Arizona",525796,"Tucson, AZ MSA",989569
+"34","Fresno, California",501362,"Fresno-Madera, CA CSA",1095829
+"35","Sacramento, California",472178,"Sacramento–Arden-Arcade–Yuba City, CA-NV CSA",2489230
+"36","Long Beach, California",465576,"Los Angeles-Long Beach-Riverside, CA CSA",18081569
+"37","Kansas City, Missouri",463202,"Kansas City-Overland Park-Kansas City, MO-KS CSA",2122908
+"38","Mesa, Arizona",446518,"Phoenix-Mesa-Glendale, AZ MSA",4263236
+"39","Virginia Beach, Virginia",442707,"Virginia Beach-Norfolk-Newport News, VA-NC MSA",1679894
+"40","Atlanta, Georgia",432427,"Atlanta-Sandy Springs-Gainesville, GA-AL CSA",5712148
+"41","Colorado Springs, Colorado",426388,"Colorado Springs, CO MSA",660319
+"42","Raleigh, North Carolina",416468,"Raleigh-Durham-Cary, NC CSA",1795750
+"43","Omaha, Nebraska",415068,"Omaha-Council Bluffs-Fremont, NE-IA CSA",913883
+"44","Miami, Florida",408750,"Miami-Fort Lauderdale-Pompano Beach, FL MSA",5670125
+"45","Tulsa, Oklahoma",396466,"Tulsa-Bartlesville, OK CSA",998438
+"46","Oakland, California",395817,"San Jose-San Francisco-Oakland, CA CSA",7563460
+"47","Cleveland, Ohio",393806,"Chattanooga-Cleveland-Athens, TN-GA CSA",702714
+"48","San Juan, Puerto Rico",389714,"San Juan-Caguas-Fajardo, PR CSA",2571374
+"49","Minneapolis, Minnesota",387753,"Minneapolis-St. Paul-St. Cloud, MN-WI CSA",3655558
+"50","Wichita, Kansas",384445,"Wichita-Winfield, KS CSA",661798
+"52","New Orleans, Louisiana",360740,"New Orleans-Metairie-Bogalusa, LA CSA",1238228
+"53","Bakersfield, California",352428,"Bakersfield-Delano, CA MSA",851710
+"54","Tampa, Florida",346037,"Tampa-St. Petersburg-Clearwater, FL MSA",2824724
+"57","Aurora, Colorado",332354,"Denver-Aurora-Boulder, CO CSA",3157520
+"59","St. Louis, Missouri",318069,"St. Louis-St. Charles-Farmington, MO-IL CSA",2882932
+"60","Riverside, California",310651,"Los Angeles-Long Beach-Riverside, CA CSA",18081569
+"62","Pittsburgh, Pennsylvania",307484,"Pittsburgh-New Castle-Weirton, PA-WV-OH CSA",2450281
+"63","Lexington, Kentucky",301569,"Lexington-Fayette–Frankfort–Richmond, KY CSA",696340
+"64","Stockton, California",296357,"Stockton, CA MSA",696214
+"65","Cincinnati, Ohio",296223,"Cincinnati-Middletown-Wilmington, OH-KY-IN CSA",2179965
+"68","Toledo, Ohio",286038,"Toledo-Fremont, OH CSA",711000
+"69","Newark, New Jersey",277540,"New York-Newark-Bridgeport, NY-NJ-CT-PA CSA",22214083
+"70","Greensboro, North Carolina",273425,"Greensboro–Winston-Salem–High Point, NC CSA",1602693
+"73","Buffalo, New York",261025,"Buffalo-Niagara-Cattaraugus, NY CSA",1213871
+"75","Fort Wayne, Indiana",255824,"Fort Wayne-Huntington-Auburn, IN CSA",615077
+"79","Orlando, Florida",243195,"Orlando-Deltona-Daytona Beach, FL CSA",2861296
+"80","Norfolk, Virginia",242628,"Virginia Beach-Norfolk-Newport News, VA-NC MSA",1679894
+"83","Madison, Wisconsin",236901,"Madison-Baraboo, WI CSA",638757
+"85","Durham, North Carolina",233252,"Raleigh-Durham-Cary, NC CSA",1795750
+"88","Glendale, Arizona",230482,"Phoenix-Mesa-Glendale, AZ MSA",4263236
+"89","Baton Rouge, Louisiana",230139,"Baton Rouge-Pierre Part, LA CSA",831395
+"96","Fremont, California",216916,"Toledo-Fremont, OH CSA",711000
+"99","Birmingham, Alabama",212413,"Birmingham-Hoover-Cullman, AL CSA",1212800

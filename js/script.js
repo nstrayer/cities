@@ -41,8 +41,62 @@ d3.csv("data/city_metro_pops.csv", function(data){
         .attr("cx", function(d){return city_scale(d.city_pop)})
         .attr("cy", function(d){return metro_scale(d.metro_pop)})
         .attr("fill", "steelblue")
+        .attr("fill-opacity", 0.7)
         .on("mouseover", function(d){
-            console.log(d.city)
+            var xPos = parseFloat(d3.select(this).attr("cx"));
+            var yPos = parseFloat(d3.select(this).attr("cy"));
+            drawTooltip(d, xPos, yPos)
+        })
+        .on("mouseout", function(){
+            d3.select("#tooltip").remove()
         })
 
 })
+
+function drawTooltip(d, x, y){
+    var right = x > width/2,
+        w = 350,
+        xLoc = right ? (x - w - 5) : (x + 5);
+
+    var tip = svg.append("g") //Make a holder for the text
+        .attr("id", "tooltip")
+        .attr("transform", "translate(" + xLoc + ", " + (y+5) + ")") //position it over the point
+
+    tip.append("rect")
+        .attr("class", "tooltipRect")
+        .attr("width", w)
+        .attr("height", 50)
+        .attr("rx", 15)
+        .attr("ry", 15)
+        .attr("fill", "#f0f0f0")
+
+    var name = tip.append("text") //write the snp name
+        .attr("y", 20)
+        .attr("x", 5)
+        .style("font-size", "0px")
+
+    name.append("tspan")
+        .style("font-weight", "bold")
+        .text("City: ")
+
+    name.append("tspan")
+        .text( d.city )
+
+    name.transition().duration(250)
+        .style("font-size", "14px")
+
+    var metro = tip.append("text") //write the pvalue
+        .attr("y", 40)
+        .attr("x", 5)
+        .style("font-size", "0px")
+
+    metro.append("tspan")
+        .style("font-weight", "bold")
+        .text("Metro: ")
+
+    metro.append("tspan")
+        .text(d.metro)
+
+    metro.transition().duration(250)
+        .style("font-size", "14px")
+    }

@@ -38,19 +38,12 @@ d3.csv("data/city_metro_pops.csv", function(data){
     var dots = svg.selectAll(".cities")
         .data(data).enter()
         .append("circle")
+        .attr("class", "cities")
         .attr("r", 5)
-        .attr("cx", function(d){return city_scale(d.city_pop)})
+        .attr("cx", function(d){return city_scale(city_limits[0])})
         .attr("cy", function(d){return metro_scale(metro_limits[0])})
         .attr("fill", "steelblue")
         .attr("fill-opacity", 0.7)
-        .transition()
-        .duration(1500)
-        .delay(function(d,i){return 50*(data.length-i)})
-        .attr("cy", function(d){return metro_scale(d.metro_pop)})
-        .transition()
-        // .duration(1500)
-        // .delay(function(d,i){return 50*(data.length-i)})
-        // .attr("cx", function(d){return city_scale(city_limits[0])})
         .on("mouseover", function(d){
             var xPos = parseFloat(d3.select(this).attr("cx"));
             var yPos = parseFloat(d3.select(this).attr("cy"));
@@ -59,6 +52,20 @@ d3.csv("data/city_metro_pops.csv", function(data){
         .on("mouseout", function(){
             d3.select("#tooltip").remove()
         })
+        .transition()
+        .duration(1500)
+        // .delay(function(d,i){return 50*(data.length-i)})
+        .attr("cx", function(d){return city_scale(d.city_pop)})
+        .each("end", function(d,i){
+            if(i == data.length - 1){
+                svg.selectAll(".cities")
+                .transition()
+                .duration(1500)
+                .delay(function(d,i){return 50*(data.length-i)})
+                .attr("cy", function(d){return metro_scale(d.metro_pop)})
+            }
+        })
+
 
 })
 
